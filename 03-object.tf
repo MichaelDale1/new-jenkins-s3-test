@@ -43,7 +43,9 @@ resource "aws_s3_object" "error" {
 locals {
   media_assets = merge(
     { for f in fileset(path.module, "**/*.png") : f => "image/png" },
-    { for f in fileset(path.module, "**/*.mp4") : f => "video/mp4" }
+    { for f in fileset(path.module, "**/*.mp4") : f => "video/mp4" },
+    { for f in fileset(path.module, "**/*.webp") : f => "image/webp" },
+    { for f in fileset(path.module, "**/*.html") : f => "text/html" }
   )
 }
 
