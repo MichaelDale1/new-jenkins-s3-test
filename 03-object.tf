@@ -5,7 +5,12 @@ resource "aws_s3_object" "index" {
   content_type = "text/html"
 
   etag = filemd5("./lab-example/index2.html")
-  acl    = "public-read"
+
+  depends_on = [
+    aws_s3_bucket_ownership_controls.example,
+    aws_s3_bucket_public_access_block.example,
+    aws_s3_bucket_policy.public_read
+  ]
 }
 #https://dev.to/yet_anotherdev/deploying-a-static-website-on-s3-with-terraform-2i74
 
@@ -17,7 +22,12 @@ resource "aws_s3_object" "error" {
   content_type = "text/html"
 
   etag = filemd5("./lab-example/error.html")
-  acl    = "public-read"
+
+  depends_on = [
+    aws_s3_bucket_ownership_controls.example,
+    aws_s3_bucket_public_access_block.example,
+    aws_s3_bucket_policy.public_read
+  ]
 }
 
 
@@ -46,7 +56,12 @@ resource "aws_s3_object" "media_assets" {
   content_type = each.value
 
   etag = filemd5("${path.module}/${each.key}")
-  acl    = "public-read"
+
+  depends_on = [
+    aws_s3_bucket_ownership_controls.example,
+    aws_s3_bucket_public_access_block.example,
+    aws_s3_bucket_policy.public_read
+  ]
 }
 
 
@@ -57,4 +72,10 @@ resource "aws_s3_object" "Lab-1c-Bonus-G-Bedrock-Report" {
   content_type = "text/markdown"
 
   etag = filemd5("./1c-bonus-G-Cli-Check Artifacts/madibamaximus-20260316-162812.md")
+
+  depends_on = [
+    aws_s3_bucket_ownership_controls.example,
+    aws_s3_bucket_public_access_block.example,
+    aws_s3_bucket_policy.public_read
+  ]
 } 
