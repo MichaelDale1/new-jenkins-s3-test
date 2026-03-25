@@ -1,11 +1,14 @@
 resource "aws_s3_object" "index" {
   bucket = aws_s3_bucket.frontend.bucket
   key    = "index.html"
-  source = "./lab-example/index.html"
+  source = "./lab-example/index2.html"
   content_type = "text/html"
 
-  etag = filemd5("./lab-example/index.html")
+  etag = filemd5("./lab-example/index2.html")
+  acl    = "public-read"
 }
+#https://dev.to/yet_anotherdev/deploying-a-static-website-on-s3-with-terraform-2i74
+
 
 resource "aws_s3_object" "error" {
   bucket = aws_s3_bucket.frontend.bucket
@@ -14,17 +17,18 @@ resource "aws_s3_object" "error" {
   content_type = "text/html"
 
   etag = filemd5("./lab-example/error.html")
+  acl    = "public-read"
 }
 
 
-resource "aws_s3_object" "image2" {
-  bucket = aws_s3_bucket.frontend.bucket
-  key    = "content/image2.jpg"
-  source = "./lab-example/content/image2.jpg"
-  content_type = "image/jpeg"
+# resource "aws_s3_object" "image2" {
+#   bucket = aws_s3_bucket.frontend.bucket
+#   key    = "content/image2.jpg"
+#   source = "./lab-example/content/image2.jpg"
+#   content_type = "image/jpeg"
 
-  etag = filemd5("./lab-example/content/image2.jpg")
-}
+#   etag = filemd5("./lab-example/content/image2.jpg")
+# }
 
 locals {
   media_assets = merge(
@@ -42,6 +46,7 @@ resource "aws_s3_object" "media_assets" {
   content_type = each.value
 
   etag = filemd5("${path.module}/${each.key}")
+  acl    = "public-read"
 }
 
 
