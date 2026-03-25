@@ -33,12 +33,18 @@ target/
 .vscode/
 *.log
 
-1c-bonus-G-Cli-Check Artifacts/
-2A-Cli-Check Artifacts/
-2B-Lab-2B_Be_A_Man-B-Artifacts/
-2B-Lab-2B_Be_A_Man-C-Artifacts/
-2B-Lab-2B_Be_A_Man-A-Artifacts/
-Lab-1A-to-1C-Bonus-F-cli-checks-artifacts/
-Lab-3B-Artifacts/
-lab-example/
-Webhook-proof/
+# 1c-bonus-G-Cli-Check Artifacts/
+# 2A-Cli-Check Artifacts/
+# 2B-Lab-2B_Be_A_Man-B-Artifacts/
+# 2B-Lab-2B_Be_A_Man-C-Artifacts/
+# 2B-Lab-2B_Be_A_Man-A-Artifacts/
+# Lab-1A-to-1C-Bonus-F-cli-checks-artifacts/
+# Lab-3B-Artifacts/
+# lab-example/
+# Webhook-proof/
+
+plan 
+plan.tfgraph
+graph.png
+
+lc-bonus-G-Bedrock-S3-Reports/
