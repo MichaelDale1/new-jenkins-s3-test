@@ -81,4 +81,6 @@ resource "aws_s3_bucket_policy" "public_read" {
       }
     ]
   })
+
+  depends_on = [aws_s3_bucket_public_access_block.example]
 }
