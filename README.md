@@ -16,3 +16,24 @@ A simple declarative Jenkinsfile
 ## User data
 EC2 startup script to bootstrap Jenkins server
 
+
+# Michael "Dale's" King Armageddon Proof
+## S3 Bucket contains Armageddon Artifacts
+
+## S3 Bucket contains Github Webhook Artifacts
+
+### Video of Jenkins Console Output
+
+#### Github Webhook Set
+
+1. **[Github-setup-Webhook-via-push](https://github.com/MichaelDale1/new-jenkins-s3-test/blob/main/Webhook-proof/Github-setup-Webhook-via-push.png)**
+
+2. [Jenkins-Pipeline-Configure-Trigger-via-Github](https://github.com/MichaelDale1/new-jenkins-s3-test/blob/main/Webhook-proof/Jenkins-Pipeline-Configure-Trigger-via-Github.png)
+
+3. **[Jenkins-Pipeline-Successful-Deployment-via-Webhook](https://github.com/MichaelDale1/new-jenkins-s3-test/blob/main/Webhook-proof/Jenkins-Pipeline-Successful-Deployment-via-Webhook.png)**
+
+4. [Trigger-initiated-via-Webhook](https://github.com/MichaelDale1/new-jenkins-s3-test/blob/main/Webhook-proof/Trigger-initiated-via-Webhook.png)
+
+
+## S3 Bucket contains Theo WAF's response Armageddon Submission
+
