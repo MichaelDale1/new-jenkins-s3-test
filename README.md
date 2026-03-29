@@ -1,3 +1,4 @@
+
 # New Jenkins server test with terraform deployment and triggers
 
 ## Jenkinsfile
@@ -65,4 +66,4 @@ EC2 startup script to bootstrap Jenkins server
 
 ## S3 Bucket contains Theo WAF's response Armageddon Submission
 
-![Jenkins Console Output showing Webhook](https://github.com/MichaelDale1/new-jenkins-s3-test/blob/main/Webhook-proof/Jenkins-Console-Output-showing-Webhook.png)
+![Theo WAF Response to Armageddon 7.0 Submission](https://github.com/MichaelDale1/new-jenkins-s3-test/blob/main/Theo-Waf-Response-to-Arm-7-0/Theo-Waf-response-to-group-Armageddon-7.0-submission.png)
