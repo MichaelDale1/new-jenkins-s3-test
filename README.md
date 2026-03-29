@@ -44,11 +44,7 @@ EC2 startup script to bootstrap Jenkins server
 
 ### Video of Jenkins Console Output
 
-<video width="640" height="360" controls>
-	<source src="https://github.com/MichaelDale1/new-jenkins-s3-test/blob/main/Webhook-proof/Jenkins-Initiated-by-Webhook-Console-Output-Recording.mp4?raw=true" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-	
+
 https://github.com/user-attachments/assets/c53617f7-287b-445f-9594-f56a810b625a
 
 ![Jenkins Console Output showing Webhook](https://github.com/MichaelDale1/new-jenkins-s3-test/blob/main/Webhook-proof/Jenkins-Console-Output-showing-Webhook.png)
